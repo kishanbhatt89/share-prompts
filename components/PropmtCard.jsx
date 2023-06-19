@@ -50,7 +50,7 @@ const PropmtCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
       <p 
         className='font-inter text-sm blue_gradient curson-pointer'
         onClick={() => handleTagClick && handleTagClick(prompt.tag)}
-      >{prompt.tag}</p>
+      >#{prompt.tag}</p>
       {session?.user.id === prompt.creator._id && pathName === '/profile' && (
         <div className='mt-5 flex-center gap-4 border-t border-gray-100 pt-3'>
           <p 
